@@ -1,5 +1,6 @@
 @passed_scenarios
 Feature: Registration
+  The user should be able to log in to the application with providing valid credentials
 
   Background: Student goes to homepage and clicks on the register link
     Given student navigates to homepage

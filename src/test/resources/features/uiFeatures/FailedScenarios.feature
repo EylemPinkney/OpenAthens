@@ -1,6 +1,6 @@
 @failed_scenarios
 Feature:  User Login without Credentials
-  The user should not be able to log in to the application without providing valid credentials.
+  The user should not be able to log in to the application without providing valid credentials
 
   Background: Student goes to homepage and clicks on the register link
     Given student navigates to homepage
