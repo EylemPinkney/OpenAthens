@@ -8,7 +8,7 @@ Feature: Registration
 
   Scenario: Scenario 1_Successful registration with all correct credentials
 
-    Given the student is on the register page
+    Given the student is on the register page now
     When enters a valid first name
     And enters a valid email address
     And enters a valid web address
@@ -22,7 +22,7 @@ Feature: Registration
 
   Scenario Outline: Scenario 2_Registration with mismatch password
 
-    Given the student is on the register page
+    Given the student is on the register page now
     When enters a valid first name
     And enters a valid email address
     And enters a valid web address

@@ -36,8 +36,8 @@ public class StepDefinitions {
         homePage.Register.click();
     }
 
-    @Given("the student is on the register page")
-    public void the_student_is_on_the_register_page() {
+    @Given("the student is on the register page now")
+    public void the_student_is_on_the_register_page_now() {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("register.html"));
     }
 
@@ -140,6 +140,8 @@ public class StepDefinitions {
         ReusableMethods.verifyElementDisplayed(registrationPage.errorMessageForShortPassword);
         ReusableMethods.verifyElementDisplayed(registrationPage.errorMessageForMismatchedPassword);
     }
+
+
 
 
 

@@ -29,7 +29,7 @@ Feature:  User Login without Credentials
 
   Scenario Outline: Scenario 4_Registration with passwords that match but fewer than 8 characters including blank
 
-    Given the student is on the register page
+    Given the student is on the register page now
     When enters a valid first name
     And enters a valid email address
     And enters a valid web address
@@ -49,7 +49,7 @@ Feature:  User Login without Credentials
 
   Scenario Outline: Scenario 5_Registration with invalid web address
 
-    Given the student is on the register page
+    Given the student is on the register page now
     When enters a valid first name
     And enters a valid email address
     And user enters an invalid web address "<invalid web address>"
@@ -70,7 +70,7 @@ Feature:  User Login without Credentials
 
   Scenario: Scenario 6_Registration with only interests field filled
 
-    Given the student is on the register page
+    Given the student is on the register page now
     And enters an interest
     And clicks on the register button
     Then verify alert for email, password fields must be entered
